@@ -23,7 +23,7 @@ const sdk = new BoxSDK({
 
 express()
 	.use(bodyParser.json())
-	.post('/get-box-file', (req, res) => handler(req, res))
+	.post('/', (req, res) => handler(req, res))
 	.listen(PORT, () => console.log(`Listening on ${PORT}`))
 
 /**
