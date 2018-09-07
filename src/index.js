@@ -16,7 +16,7 @@ const sdk = new BoxSDK({
 	clientSecret: process.env.BOX_CLIENT_SECRET,
 	appAuth: {
 		keyID: process.env.BOX_APPAUTH_KEY_ID,
-		privateKey:  process.env.BOX_APPAUTH_PRIVATE_KEY,
+		privateKey: process.env.BOX_APPAUTH_PRIVATE_KEY,
 		passphrase: process.env.BOX_PASSPHRASE
 	}
 });
@@ -56,10 +56,10 @@ function handleWebhookEvent(webhookEvent) {
 	// The source that triggered the event: a file, folder, etc.
 	if (webhookEvent.source) {
 		const source = webhookEvent.source
-        message += `, source=<${source.type} id=${source.id} name=${source.name || 'unknown'}>`
-    }
-    console.log(`Box event: ${message}`)
-    return { statusCode: 200, body: message }
+		message += `, source=<${source.type} id=${source.id} name=${source.name || 'unknown'}>`
+	}
+	console.log(`Box event: ${message}`)
+	return { statusCode: 200, body: message }
 }
 
 /**
