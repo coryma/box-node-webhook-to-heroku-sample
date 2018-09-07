@@ -10,16 +10,10 @@ import BoxSDK from 'box-node-sdk'
 
 const PORT = process.env.PORT || 3000
 
+const boxConfig = JSON.parse(process.env.BOX_CONFIG);
+
 //Initialize Box SDK
-const sdk = new BoxSDK({
-	clientID: process.env.BOX_CLIENT_ID,
-	clientSecret: process.env.BOX_CLIENT_SECRET,
-	appAuth: {
-		keyID: process.env.BOX_APPAUTH_KEY_ID,
-		privateKey: process.env.BOX_APPAUTH_PRIVATE_KEY,
-		passphrase: process.env.BOX_PASSPHRASE
-	}
-});
+let sdk = BoxSDK.getPreconfiguredInstance(boxConfig);
 
 express()
 	.use(bodyParser.json())
