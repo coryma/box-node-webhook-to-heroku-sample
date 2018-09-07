@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/coryma/box-node-webhook-to-heroku-sample#readme",
   "dependencies": {
+    "babel-preset-env": "^1.7.0",
     "box-node-sdk": "^1.20.0",
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
   }
 }
