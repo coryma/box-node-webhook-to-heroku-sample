@@ -2,6 +2,6 @@
     "name": "Box Webhook Handler Sample",
     "description": "A barebones Node.js app for connecting a Box webhook with a Heroku app.",
     "repository": "https://github.com/coryma/box-node-webhook-to-heroku-sample.git",
-    "logo": "https://node-js-sample.herokuapp.com/node.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/5/57/Box%2C_Inc._logo.svg",
     "keywords": ["node", "express", "static"]
   }
