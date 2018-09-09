@@ -1,5 +1,5 @@
 # box-node-webhook-to-heroku-sample
-This example project gets you started with using Node.js to build [Box webhook](https://github.com/box/box-node-sdk/blob/master/docs/webhooks.md) handler app by deoploying to 
+This example project gets you started with using Node.js to build [Box webhook](https://github.com/box/box-node-sdk/blob/master/docs/webhooks.md) handler app and deoploy it on Heroku.
 Heroku.
 
 ## Getting Started
