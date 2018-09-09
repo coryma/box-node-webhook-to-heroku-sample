@@ -40,6 +40,7 @@ These instructions will get you a copy of the project up and running on Heroku f
 3. Paste the contents of your JSON config file into the `BOX_CONFIG` Confing Vars.
 4. Click "Depoly App"
 5. Find the URL for your API Gateway on the "Settings" tab. It should look like:
+
 **Domain** Your app can be found at https://xxxxxxxx.herokuapp.com/
 
 #### Step 3. Create a Box webhook to call the Lambda function
