@@ -36,7 +36,7 @@ These instructions will get you a copy of the project up and running on Heroku f
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-2. Name the application "box-webhook-handler-sample" in App name field. 
+2. Name the application in App name field. 
 3. Paste the contents of your JSON config file into the `BOX_CONFIG` Confing Vars.
 4. Click "Depoly App"
 5. Find the URL for your API Gateway on the "Settings" tab. It should look like:
