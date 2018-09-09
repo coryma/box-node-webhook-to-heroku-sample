@@ -31,19 +31,16 @@ These instructions will get you a copy of the project up and running on Heroku f
     * Press "Download as JSON"
     * Save the JSON config file, which contains your application's webhook signing keys
 
-    
 ##### Step 2. Deploy an Heroku application
 1. Click the button below to deploy a Box Webhook handler application.
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 2. Name the application "box-webhook-handler-sample" in App name field. 
 3. Paste the contents of your JSON config file into the `BOX_CONFIG` Confing Vars.
 4. Click "Depoly App"
 5. Find the URL for your API Gateway on the "Settings" tab. It should look like:
-```
-**Domain**
-Your app can be found at https://xxxxxxxx.herokuapp.com/
-```
+**Domain** Your app can be found at https://xxxxxxxx.herokuapp.com/
 
 #### Step 3. Create a Box webhook to call the Lambda function
 Note: See [Getting Started with Webhooks V2](https://docs.box.com/v2.0/docs/getting-started-with-webhooks-v2) and [Overview of Webhooks V2](https://docs.box.com/reference#webhooks-v2) for more info.
