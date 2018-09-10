@@ -28,10 +28,11 @@ function handler(req, res) {
 	let body = stringifyBody(req.body)
 	let isValid = BoxSDK.validateWebhookMessage(body, req.headers,
 		process.env.BOX_WEBHOOKS_PRIMARY_KEY, process.env.BOX_WEBHOOKS_SECONDARY_KEY)
+	
 	if (isValid) {
 		// Handle the webhook event
 		const response = handleWebhookEvent(JSON.parse(body))
-		res.status(response.statusCode).send(response.message)
+		res.status(response.statusCode).send(response.body)
 	} else {
 		res.status(403).send('Message authenticity not verified')
 	}
