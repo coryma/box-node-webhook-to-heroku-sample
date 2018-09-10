@@ -41,16 +41,16 @@ function handler(req, res) {
 /**
  *  The sample function logs details of the webhook event to Heroku log.f the analysis.
  */
-function handleWebhookEvent(webhookEvent) {
+function handleWebhookEvent(body) {
 	// Print basic information about the Box event
-	let message = `webhook=${webhookEvent.webhook.id}`
+	let message = `webhook=${body.webhook.id}`
 
 	// The event trigger: FILE.DOWNLOADED, FILE.UPLOADED, etc.
-	message += `, trigger=${webhookEvent.trigger}`
+	message += `, trigger=${body.trigger}`
 
 	// The source that triggered the event: a file, folder, etc.
-	if (webhookEvent.source) {
-		const source = webhookEvent.source
+	if (body.source) {
+		const source = body.source
 		message += `, source=<${source.type} id=${source.id} name=${source.name || 'unknown'}>`
 	}
 	console.log(`Box event: ${message}`)
