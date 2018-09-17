@@ -1,7 +1,9 @@
 ---
-post_title: 'Post Title'
-layout: post_type_probably_post
+post_title: box-node-webhook-to-heroku-sample
+author: Cory Ma
+layout: post
 published: true
+post_date: 2012-09-18 04:51:37
 ---
 
 # box-node-webhook-to-heroku-sample
