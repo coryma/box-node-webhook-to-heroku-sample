@@ -2,7 +2,6 @@
 post_title: 'box-node-webhook-to-heroku-sample'
 layout: post
 published: true
-post_date: 2012-09-18 04:51:37
 ---
 
 # box-node-webhook-to-heroku-sample
