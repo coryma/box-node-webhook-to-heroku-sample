@@ -1,6 +1,6 @@
 ---
 post_title: 'box-node-webhook-to-heroku-sample'
-layout: post
+layout: _post
 published: true
 ---
 
