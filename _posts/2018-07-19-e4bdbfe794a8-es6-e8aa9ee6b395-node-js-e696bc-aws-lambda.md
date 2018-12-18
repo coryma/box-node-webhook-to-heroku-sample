@@ -41,7 +41,7 @@ $ cd node-lambda-babel-hello-world
 先開啟 package.json，將與專案名稱相關的內容，改為自己的專案名。再來由於 node-lambda v0.8 有一個小bug，所以需要將 package.json 中 node-lambda 設定，將版本改為 ^0.11.7
 
 [sourcecode language="shell"]
-&amp;quot;node-lambda&amp;quot;: &amp;quot;^0.11.7&amp;quot;,
+&amp;amp;quot;node-lambda&amp;amp;quot;: &amp;amp;quot;^0.11.7&amp;amp;quot;,
 [/sourcecode]
 
 <h4>Step 4: 完成 node-lamba setup</h4>
